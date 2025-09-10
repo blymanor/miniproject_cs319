@@ -56,7 +56,216 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Job Detail ---
   const jobDetails = {
-    /* (รายละเอียด object jobDetails เดิม คงไว้ทั้งหมด) */
+    'ux-ui-designer': {
+                    title: 'UX/UI Designer - Innovate Hub Corp.',
+                    content: `
+            <div class="space-y-6">
+              <!-- Info Cards -->
+              <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-building text-blue-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">บริษัท</p>
+                    <p>Innovate Hub Corp.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-map-marker-alt text-blue-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">สถานที่</p>
+                    <p>อโศก</p>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-money-bill text-green-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">เงินเดือน</p>
+                    <p class="text-green-600 font-semibold">65,000-110,000 บาท</p>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Responsibilities -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-clipboard-check text-blue-600 mr-2"></i> ความรับผิดชอบหลัก
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>ออกแบบ UX/UI ให้ใช้งานง่าย สวยงาม และตอบโจทย์ผู้ใช้</li>
+                  <li>ทำ Wireframe, Mockup, Prototype ด้วย Figma หรือ Adobe XD</li>
+                  <li>ทำงานร่วมกับทีม Product และ Developer เพื่อนำ Design ไปใช้จริง</li>
+                  <li>ศึกษาและปรับปรุงจาก Feedback และ Usability Test</li>
+                </ul>
+              </div>
+    
+              <!-- Qualifications -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-user-graduate text-indigo-600 mr-2"></i> คุณสมบัติที่ต้องการ
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>ปริญญาตรีด้านออกแบบหรือสาขาที่เกี่ยวข้อง</li>
+                  <li>มีประสบการณ์ 1–2 ปี (หรือมี Portfolio ที่โดดเด่น)</li>
+                  <li>ใช้เครื่องมือออกแบบได้คล่อง เช่น Figma, Adobe XD</li>
+                  <li>เข้าใจหลักการ UX, Usability, Responsive Design</li>
+                  <li>มีทักษะการสื่อสารและทำงานเป็นทีม</li>    
+                </ul>
+              </div>
+    
+              <!-- Benefits -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-gift text-green-600 mr-2"></i> สวัสดิการ
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>เครื่องคอมพิวเตอร์และซอฟต์แวร์ที่จำเป็น</li>
+                  <li>WFH 2 วัน/สัปดาห์</li>
+                  <li>ทุนสนับสนุนการเรียนรู้และ Tech Conference</li>
+                  <li>โบนัสตามผลงานและการเติบโตของบริษัท</li>
+                </ul>
+              </div>
+            </div>
+          `
+                },
+                'frontend-developer': {
+                    title: 'Frontend Developer - Creative Tech Inc.',
+                    content: `
+            <div class="space-y-6">
+              <!-- Info Cards -->
+              <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-building text-blue-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">บริษัท</p>
+                    <p>Creative Tech Inc.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-map-marker-alt text-blue-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">สถานที่</p>
+                    <p>สุขุมวิท</p>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-money-bill text-green-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">เงินเดือน</p>
+                    <p class="text-green-600 font-semibold">75,000-150,000 บาท</p>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Responsibilities -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-clipboard-check text-blue-600 mr-2"></i> ความรับผิดชอบหลัก
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>ออกแบบและสร้าง User Interface ที่ใช้งานง่ายและตอบสนองได้ดีบนทุกอุปกรณ์</li>
+                  <li>ทำงานร่วมกับทีม UX/UI เพื่อแปลง Mockup เป็นโค้ดที่ใช้งานได้จริง</li>
+                  <li>เสนอแนะวิธีการปรับปรุงกระบวนการพัฒนาและโปรเจกต์ในอนาคต</li>
+                </ul>
+              </div>
+    
+              <!-- Qualifications -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-user-graduate text-indigo-600 mr-2"></i> คุณสมบัติที่ต้องการ
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>ปริญญาตรี/โท สาขาวิทยาการคอมพิวเตอร์หรือที่เกี่ยวข้อง</li>
+                  <li>ประสบการณ์ 2+ ปีในการพัฒนาเว็บด้วย JavaScript Frameworks (ยินดีรับนักศึกษาจบใหม่)</li>
+                  <li>เชี่ยวชาญ React/Vue/Angular, HTML5, CSS3, JavaScript</li>
+                  <li>เข้าใจ Responsive Design และ Cross-browser</li>
+                </ul>
+              </div>
+    
+              <!-- Benefits -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-gift text-green-600 mr-2"></i> สวัสดิการ
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>เครื่องคอมพิวเตอร์สเปคสูงและซอฟต์แวร์ที่จำเป็น</li>
+                  <li>WFH 2 วัน/สัปดาห์</li>
+                  <li>ทุนสนับสนุนการเรียนรู้และ Tech Conference</li>
+                  <li>โบนัสตามผลงานและการเติบโตของบริษัท</li>
+                </ul>
+              </div>
+            </div>
+          `
+                },
+                'data-scientist': {
+                    title: 'Data Scientist - Data Insights Corp.',
+                    content: `
+            <div class="space-y-6">
+              <!-- Info Cards -->
+              <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-building text-blue-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">บริษัท</p>
+                    <p>Data Insights Corp.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-map-marker-alt text-blue-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">สถานที่</p>
+                    <p>สีลม</p>
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex items-center space-x-3">
+                  <i class="fas fa-money-bill text-green-600"></i>
+                  <div>
+                    <p class="text-sm text-gray-500">เงินเดือน</p>
+                    <p class="text-green-600 font-semibold">90,000-180,000 บาท</p>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Responsibilities -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-clipboard-check text-blue-600 mr-2"></i> ความรับผิดชอบหลัก
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>วิเคราะห์ข้อมูลขนาดใหญ่พื่อค้นหาแนวโน้มและข้อมูลเชิงลึกทางธุรกิจ</li>
+                  <li>สร้างและพัฒนาโมเดล Machine Learning</li>
+                  <li>ทำ Visualization และรายงานเชิงธุรกิจ</li>
+                </ul>
+              </div>
+    
+              <!-- Qualifications -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-user-graduate text-indigo-600 mr-2"></i> คุณสมบัติที่ต้องการ
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>ปริญญาตรี/โท สาขาวิทยาการคอมพิวเตอร์, สถิติ, คณิตศาสตร์ หรือที่เกี่ยวข้อง</li>
+                  <li>ประสบการณ์ 2+ ปีในสาย Data Science หรือ Data Analysis(ยินดีรับนักศึกษาจบใหม่)</li>
+                  <li>เชี่ยวชาญ Python (Pandas, Scikit-learn, Matplotlib) และ SQL</li>
+                  <li>ความรู้ด้านสถิติและ Machine Learning / Deep Learning</li>
+                  <li>สามารถใช้เครื่องมือ BI เช่น Tableau หรือ Power BI</li>
+                </ul>
+              </div>
+    
+              <!-- Benefits -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="font-semibold mb-3 flex items-center">
+                  <i class="fas fa-gift text-green-600 mr-2"></i> สวัสดิการ
+                </h3>
+                <ul class="list-disc list-inside pl-1 space-y-1 text-sm">
+                  <li>เครื่องคอมพิวเตอร์สเปคสูงสำหรับการวิเคราะห์ข้อมูล</li>
+                  <li>WFH 2 วัน/สัปดาห์</li>
+                  <li>ทุนการศึกษาสำหรับหลักสูตร Data Science</li>
+                  <li>โบนัสตามผลงานและการเติบโตของบริษัท</li>
+                </ul>
+              </div>
+            </div>
+          `
+                }
   };
 
   const jobModal = $('#jobModal');
@@ -212,3 +421,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
