@@ -153,24 +153,413 @@
     </section>
 
     <!-- Section 2: Training Page -->
-    <section id="training" class="page-section" aria-labelledby="trainingHeading">
-      <!-- … (เนื้อหาคอร์สทั้งหมดตามไฟล์เดิม) … -->
-    </section>
+        <section id="training" class="page-section" aria-labelledby="trainingHeading">
+            <h1 id="trainingHeading" class="text-3xl font-bold mb-8 text-center">คอร์สอบรมและสัมมนา</h1>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Training Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=PHP+%26+MySQL" alt="PHP & MySQL Course"
+                        class="w-full h-48 object-cover group-hover:opacity-80 transition" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">PHP & MySQL Database Web Programming</h3>
+                        <p class="text-gray-600 text-sm mb-4">สร้างเว็บไซต์ที่ทำงานกับฐานข้อมูลได้อย่างเต็มรูปแบบ (32
+                            ชั่วโมง 7,500 บาท)</p>
+                        <button class="text-blue-600 font-semibold hover:underline course-detail-btn"
+                            data-course="php-mysql">ดูรายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div>
 
-    <!-- Section 3: About Us Page -->
-    <section id="about" class="page-section" aria-labelledby="aboutHeading">
-      <!-- … (ข้อมูลบริษัทและฟอร์มติดต่อเรา ตามไฟล์เดิม) … -->
-    </section>
+                <!-- Training Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/f59e0b/ffffff?text=React+JS" alt="React JS Course"
+                        class="w-full h-48 object-cover group-hover:opacity-80 transition" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Modern Frontend with React.js</h3>
+                        <p class="text-gray-600 text-sm mb-4">สร้าง SPA ที่ทันสมัย (40 ชั่วโมง 9,500 บาท)</p>
+                        <button class="text-blue-600 font-semibold hover:underline course-detail-btn"
+                            data-course="react-js">ดูรายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div>
 
-    <!-- ===== Course Detail Pages ===== -->
-    <!-- … (รายละเอียดคอร์ส PHP, React, Data Science, Agile, UI/UX, DevOps ตามไฟล์เดิม) … -->
+                <!-- Training Card 3-->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Data+Science" alt="Data Science"
+                        class="w-full h-48 object-cover group-hover:opacity-80 transition" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Data Science Bootcamp with Python</h3>
+                        <p class="text-gray-600 text-sm mb-4">Python + ML (60 ชั่วโมง 15,000 บาท)</p>
+                        <button class="text-blue-600 font-semibold hover:underline course-detail-btn"
+                            data-course="data-science">ดูรายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div>
 
-    <!-- Course Registration Modal -->
-    <div id="courseModal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
-      <!-- … (ฟอร์มสมัครเรียนตามไฟล์เดิม) … -->
-    </div>
+                <!-- Training Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Agile+%26+Scrum" alt="Agile"
+                        class="w-full h-48 object-cover group-hover:opacity-80 transition" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Agile Project Management & Scrum</h3>
+                        <p class="text-gray-600 text-sm mb-4">บริหารโครงการแบบ Agile (16 ชั่วโมง 6,000 บาท)</p>
+                        <button class="text-blue-600 font-semibold hover:underline course-detail-btn"
+                            data-course="agile">ดูรายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div>
 
-  </main>
+                <!-- Training Card 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/ec4899/ffffff?text=UI/UX+Design" alt="UI/UX"
+                        class="w-full h-48 object-cover group-hover:opacity-80 transition" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">UI/UX Design for Beginners</h3>
+                        <p class="text-gray-600 text-sm mb-4">ปูพื้น UX ครบเครื่อง (30 ชั่วโมง 8,000 บาท)</p>
+                        <button class="text-blue-600 font-semibold hover:underline course-detail-btn"
+                            data-course="ui-ux">ดูรายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div>
+
+                <!-- Training Card 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/f97316/ffffff?text=DevOps" alt="DevOps"
+                        class="w-full h-48 object-cover group-hover:opacity-80 transition" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Introduction to DevOps</h3>
+                        <p class="text-gray-600 text-sm mb-4">Dev + Ops + CI/CD (24 ชั่วโมง 7,500 บาท)</p>
+                        <button class="text-blue-600 font-semibold hover:underline course-detail-btn"
+                            data-course="devops">ดูรายละเอียดเพิ่มเติม</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: About Us Page -->
+        <section id="about" class="page-section" aria-labelledby="aboutHeading">
+            <h1 id="aboutHeading" class="text-3xl font-bold mb-8 text-center">เกี่ยวกับเรา</h1>
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <!-- Company Information -->
+                <div>
+                    <h2 class="text-2xl font-bold text-blue-700 mb-4">บริษัท เทคทาเลนท์ จำกัด</h2>
+                    <p class="text-gray-600 mb-6">
+                        เราคือแพลตฟอร์มจัดหางานชั้นนำที่เชื่อมโยงผู้มีความสามารถด้านเทคโนโลยีเข้ากับองค์กรที่ดีที่สุด
+                        ภารกิจของเราคือการสร้างโอกาสและขับเคลื่อนวงการเทคโนโลยีของประเทศให้เติบโตอย่างยั่งยืน</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4"></i>
+                            <span><strong class="block">ที่อยู่:</strong> 9/1 หมู่ 5 ถนนพหลโยธิน ตำบลคลองหนึ่ง
+                                อำเภอคลองหลวง ปทุมธานี 12120</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-user text-blue-600 mt-1 mr-4"></i>
+                            <span><strong class="block">ผู้ติดต่อ:</strong> อิงค์นภ และทิพย์ปาลิดา</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-4"></i>
+                            <span><strong class="block">อีเมล:</strong> ingnop.khun@bumail.net,
+                                tipparida.ruji@bumail.net</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-600 mt-1 mr-4"></i>
+                            <span><strong class="block">เบอร์โทรศัพท์:</strong> 096-945-7353, 085-042-8955</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">ติดต่อเรา</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-4">
+                            <label for="contact_name" class="block mb-2 font-medium">ชื่อ</label>
+                            <input id="contact_name" name="contact_name" type="text"
+                                class="w-full p-3 border border-gray-300 rounded-lg" placeholder="ชื่อของคุณ" />
+                            <p class="text-red-500 text-sm mt-1 error-message"></p>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contact_email" class="block mb-2 font-medium">อีเมล</label>
+                            <input id="contact_email" name="contact_email" type="email"
+                                class="w-full p-3 border border-gray-300 rounded-lg" placeholder="อีเมลของคุณ" />
+                            <p class="text-red-500 text-sm mt-1 error-message"></p>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contact_subject" class="block mb-2 font-medium">เรื่อง</label>
+                            <textarea id="contact_subject" name="contact_subject" rows="4"
+                                class="w-full p-3 border border-gray-300 rounded-lg"
+                                placeholder="เขียนข้อความของคุณที่นี่..."></textarea>
+                            <p class="text-red-500 text-sm mt-1 error-message"></p>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Course Detail Pages ===== -->
+        <!-- PHP & MySQL -->
+        <section id="course-php-mysql" class="page-section">
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-5xl mx-auto">
+                <button class="mb-6 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded transition"
+                    onclick="showPage('training')">← กลับสู่หน้าคอร์สอบรม</button>
+                <h1 class="text-3xl font-bold mb-6 text-blue-700">PHP & MySQL Database Web Programming</h1>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=PHP+%26+MySQL"
+                            alt="PHP & MySQL Course" class="w-full h-48 object-cover rounded-lg mb-6" />
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4">ข้อมูลคอร์ส</h3>
+                            <div class="space-y-2">
+                                <p><strong>ระยะเวลา:</strong> 32 ชั่วโมงเต็ม (4 วัน วันละ 8 ชั่วโมง)</p>
+                                <p><strong>รูปแบบ:</strong> Onsite + Online Support</p>
+                                <p><strong>ราคา:</strong> 7,500 บาท</p>
+                                <p><strong>ผู้สอน:</strong> ผู้เชี่ยวชาญด้าน Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">ภาพรวมคอร์ส</h3>
+                        <p class="text-gray-600 mb-6">สร้างเว็บไซต์ที่ทำงานกับฐานข้อมูลได้อย่างเต็มรูปแบบ
+                            เป็นคอร์สยอดนิยมสำหรับมือใหม่ที่ต้องการต่อยอดสู่การพัฒนาเว็บระดับ Production</p>
+                        <h4 class="text-lg font-semibold mb-2">เหมาะกับใครบ้าง</h4>
+                        <p class="text-gray-600 mb-4">มือใหม่ หรือผู้ที่เคยเขียน HTML/CSS
+                            แล้วอยากทำเว็บที่มีฟังก์ชันซับซ้อน</p>
+                        <div class="mt-6"><button
+                                class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">สมัครเรียนเลย</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- React.js -->
+        <section id="course-react-js" class="page-section">
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-5xl mx-auto">
+                <button class="mb-6 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded transition"
+                    onclick="showPage('training')">← กลับสู่หน้าคอร์สอบรม</button>
+                <h1 class="text-3xl font-bold mb-6 text-blue-700">Modern Frontend with React.js</h1>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://placehold.co/600x400/f59e0b/ffffff?text=React+JS" alt="React JS Course"
+                            class="w-full h-48 object-cover rounded-lg mb-6" />
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4">ข้อมูลคอร์ส</h3>
+                            <div class="space-y-2">
+                                <p><strong>ระยะเวลา:</strong> 40 ชั่วโมง (5 วัน วันละ 8 ชั่วโมง)</p>
+                                <p><strong>รูปแบบ:</strong> Onsite + Hands-on Workshop</p>
+                                <p><strong>ราคา:</strong> 9,500 บาท</p>
+                                <p><strong>ผู้สอน:</strong> ผู้เชี่ยวชาญด้าน Frontend</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">ภาพรวมคอร์ส</h3>
+                        <p class="text-gray-600 mb-6">เรียนรู้การสร้าง Single Page Application ที่ทันสมัย เข้าใจ Hooks,
+                            Router, State Management และการเชื่อมต่อ API</p>
+                        <h4 class="text-lg font-semibold mb-2">เหมาะกับใครบ้าง</h4>
+                        <p class="text-gray-600 mb-4">ผู้มีพื้นฐาน JavaScript และ HTML/CSS ที่อยากก้าวสู่สาย Frontend
+                            เต็มตัว</p>
+                        <div class="mt-6"><button
+                                class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">สมัครเรียนเลย</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Science -->
+        <section id="course-data-science" class="page-section">
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-5xl mx-auto">
+                <button class="mb-6 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded transition"
+                    onclick="showPage('training')">← กลับสู่หน้าคอร์สอบรม</button>
+                <h1 class="text-3xl font-bold mb-6 text-blue-700">Data Science Bootcamp with Python</h1>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://placehold.co/600x400/22c55e/ffffff?text=Data+Science"
+                            alt="Data Science Bootcamp with Python" class="w-full h-48 object-cover rounded-lg mb-6" />
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4">ข้อมูลคอร์ส</h3>
+                            <div class="space-y-2">
+                                <p><strong>ระยะเวลา:</strong> 60 ชั่วโมง (3 สัปดาห์ สัปดาห์ละ 20 ชม.)</p>
+                                <p><strong>รูปแบบ:</strong> Hybrid + Mentoring</p>
+                                <p><strong>ราคา:</strong> 15,000 บาท</p>
+                                <p><strong>ผู้สอน:</strong> นักวิทยาศาสตร์ข้อมูลจากภาคธุรกิจ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">ภาพรวมคอร์ส</h3>
+                        <p class="text-gray-600 mb-4">เริ่มตั้งแต่ Pandas, NumPy, Matplotlib, Data Cleaning,
+                            Visualization จนถึงโมเดล Supervised/Unsupervised พร้อม End-to-End Project จากเคสจริง</p>
+                        <h4 class="text-lg font-semibold mb-2">เหมาะกับใครบ้าง</h4>
+                        <ul class="list-disc pl-5 text-gray-600 mb-6 space-y-1">
+                            <li>มีพื้นฐานเขียนโปรแกรมเล็กน้อยและสนใจวิเคราะห์ข้อมูล</li>
+                            <li>ผู้ทำงานด้านข้อมูลที่อยากอัปสกิล ML</li>
+                        </ul>
+                        <div class="mt-6"><button
+                                class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">สมัครเรียนเลย</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agile -->
+        <section id="course-agile" class="page-section">
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-5xl mx-auto">
+                <button class="mb-6 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded transition"
+                    onclick="showPage('training')">← กลับสู่หน้าคอร์สอบรม</button>
+                <h1 class="text-3xl font-bold mb-6 text-blue-700">Agile Project Management & Scrum</h1>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://placehold.co/600x400/0ea5e9/ffffff?text=Agile+%26+Scrum" alt="Agile & Scrum"
+                            class="w-full h-48 object-cover rounded-lg mb-6" />
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4">ข้อมูลคอร์ส</h3>
+                            <div class="space-y-2">
+                                <p><strong>ระยะเวลา:</strong> 16 ชั่วโมง (2 วัน วันละ 8 ชม.)</p>
+                                <p><strong>รูปแบบ:</strong> Workshop Interactive</p>
+                                <p><strong>ราคา:</strong> 6,000 บาท</p>
+                                <p><strong>ผู้สอน:</strong> Agile Coach / Scrum Master</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">ภาพรวมคอร์ส</h3>
+                        <p class="text-gray-600 mb-4">ปูพื้น Agile และ Scrum Framework: Sprint Planning, Daily Standup,
+                            Review/Retro และการใช้ Jira/Confluence ผ่าน Simulation Exercise</p>
+                        <h4 class="text-lg font-semibold mb-2">เหมาะกับใครบ้าง</h4>
+                        <ul class="list-disc pl-5 text-gray-600 mb-6 space-y-1">
+                            <li>Project Manager, Team Leader, สมาชิกทีมพัฒนา</li>
+                            <li>ผู้ที่ย้ายจาก Traditional PM มา Agile</li>
+                        </ul>
+                        <div class="mt-6"><button
+                                class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">สมัครเรียนเลย</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UI/UX -->
+        <section id="course-ui-ux" class="page-section">
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-5xl mx-auto">
+                <button class="mb-6 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded transition"
+                    onclick="showPage('training')">← กลับสู่หน้าคอร์สอบรม</button>
+                <h1 class="text-3xl font-bold mb-6 text-blue-700">UI/UX Design for Beginners</h1>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://placehold.co/600x400/a78bfa/ffffff?text=UI%2FUX+Design" alt="UI/UX Design"
+                            class="w-full h-48 object-cover rounded-lg mb-6" />
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4">ข้อมูลคอร์ส</h3>
+                            <div class="space-y-2">
+                                <p><strong>ระยะเวลา:</strong> 30 ชั่วโมง (4 วัน ~7.5 ชม.)</p>
+                                <p><strong>รูปแบบ:</strong> Hands-on + Portfolio Review</p>
+                                <p><strong>ราคา:</strong> 8,000 บาท</p>
+                                <p><strong>ผู้สอน:</strong> Product Designer / UX Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">ภาพรวมคอร์ส</h3>
+                        <p class="text-gray-600 mb-4">ตั้งแต่ User Research, Persona, Journey, Wireframe, Prototype ถึง
+                            Usability Testing ใช้ Figma เป็นหลัก ทำโปรเจกต์จริงเพื่อพอร์ต</p>
+                        <h4 class="text-lg font-semibold mb-2">เหมาะกับใครบ้าง</h4>
+                        <ul class="list-disc pl-5 text-gray-600 mb-6 space-y-1">
+                            <li>ผู้เริ่มต้นสาย UI/UX</li>
+                            <li>นักพัฒนาที่อยากเข้าใจงานดีไซน์</li>
+                            <li>ผู้ทำผลิตภัณฑ์ดิจิทัลที่ต้องการยกระดับ UX</li>
+                        </ul>
+                        <div class="mt-6"><button
+                                class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">สมัครเรียนเลย</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DevOps -->
+        <section id="course-devops" class="page-section">
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-5xl mx-auto">
+                <button class="mb-6 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded transition"
+                    onclick="showPage('training')">← กลับสู่หน้าคอร์สอบรม</button>
+                <h1 class="text-3xl font-bold mb-6 text-blue-700">Introduction to DevOps</h1>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://placehold.co/600x400/f97316/ffffff?text=DevOps+Basics" alt="DevOps"
+                            class="w-full h-48 object-cover rounded-lg mb-6" />
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4">ข้อมูลคอร์ส</h3>
+                            <div class="space-y-2">
+                                <p><strong>ระยะเวลา:</strong> 24 ชั่วโมง (3 วัน วันละ 8 ชม.)</p>
+                                <p><strong>รูปแบบ:</strong> Lab-based + Real Environment</p>
+                                <p><strong>ราคา:</strong> 7,500 บาท</p>
+                                <p><strong>ผู้สอน:</strong> DevOps Engineer / Cloud Practitioner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">ภาพรวมคอร์ส</h3>
+                        <p class="text-gray-600 mb-4">ครอบคลุม DevOps Culture & Practices, CI/CD Pipeline,
+                            Docker/Container, Cloud พื้นฐาน และ IaC พร้อมสาธิตการตั้งค่า Pipeline จริงด้วย Git/Jenkins
+                            และ Monitoring</p>
+                        <h4 class="text-lg font-semibold mb-2">เหมาะกับใครบ้าง</h4>
+                        <ul class="list-disc pl-5 text-gray-600 mb-6 space-y-1">
+                            <li>นักพัฒนาที่อยากเข้าใจกระบวนการ Deploy/Operations</li>
+                            <li>System Administrator ที่ต้องการแนวทางสมัยใหม่</li>
+                            <li>ผู้สนใจเปลี่ยนสายเป็น DevOps Engineer</li>
+                        </ul>
+                        <div class="mt-6"><button
+                                class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">สมัครเรียนเลย</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Registration Modal -->
+        <div id="courseModal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
+            <div
+                class="modal-content w-[92vw] max-w-2xl max-h-[90vh] p-6 overflow-y-auto rounded-xl shadow-xl bg-white">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold text-blue-700">กรอกข้อมูลเพื่อติดต่อกลับ</h2>
+                    <button id="courseModalClose" class="text-gray-500 text-2xl">&times;</button>
+                </div>
+                <form id="courseForm" novalidate>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="fname" class="block mb-2 font-medium">ชื่อจริง</label>
+                            <input id="fname" name="firstname" type="text" placeholder="สมชาย"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" />
+                            <p class="text-red-500 text-sm mt-1 error-message"></p>
+                        </div>
+                        <div>
+                            <label for="lname" class="block mb-2 font-medium">นามสกุล</label>
+                            <input id="lname" name="lastname" type="text" placeholder="รักดี"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" />
+                            <p class="text-red-500 text-sm mt-1 error-message"></p>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="email" class="block mb-2 font-medium">อีเมล</label>
+                            <input id="email" name="email" type="email" placeholder="example@mail.com"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" />
+                            <p class="text-red-500 text-sm mt-1 error-message"></p>
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 font-medium">เบอร์โทรศัพท์</label>
+                            <input id="phone" name="phone" type="tel" placeholder="08xxxxxxxx"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" />
+                            <p class="text-red-500 text-sm mt-1 error-message"></p>
+                        </div>
+                        <div class="text-center mt-6">
+                            <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">
+                                ยืนยันการสมัคร
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white mt-16">
@@ -194,3 +583,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
