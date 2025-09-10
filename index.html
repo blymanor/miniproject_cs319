@@ -570,17 +570,40 @@
   </footer>
 
   <!-- Message Modal -->
-  <div id="messageModal" class="modal-backdrop hidden" aria-modal="true" role="dialog" aria-labelledby="messageTitle">
-    <!-- … (modal แจ้งเตือน ตามไฟล์เดิม) … -->
-  </div>
+    <div id="messageModal" class="modal-backdrop hidden" aria-modal="true" role="dialog" aria-labelledby="messageTitle">
+        <div class="modal-content w-[90vw] max-w-md p-6">
+            <h2 id="messageTitle" class="text-lg font-semibold mb-2">แจ้งเตือน</h2>
+            <p id="modalMessageText" class="text-gray-700"></p>
+            <div class="mt-6 text-right">
+                <button id="modalCloseButton"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">ปิด</button>
+            </div>
+        </div>
+    </div>
 
   <!-- Job Detail Modal -->
-  <div id="jobModal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
-    <!-- … (modal รายละเอียดงาน ตามไฟล์เดิม) … -->
-  </div>
+    <div id="jobModal" class="modal-backdrop hidden" aria-modal="true" role="dialog">
+        <div class="modal-content w-[92vw] max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-xl bg-white">
+
+            <div class="flex justify-between items-center border-b p-6">
+                <h2 id="jobModalTitle" class="text-2xl font-bold text-blue-700"></h2>
+                <button id="jobModalClose" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            </div>
+
+            <div id="jobModalContent" class="p-6 space-y-6"></div>
+
+            <div class="border-t p-6 text-center">
+                <button id="applyJobBtn"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+                    สมัครงานนี้
+                </button>
+            </div>
+        </div>
+    </div>
 
   <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
+
 
