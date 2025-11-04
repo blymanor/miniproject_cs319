@@ -49,3 +49,10 @@ One modal component used for multiple purposes — job details, course registrat
 
 ## 🌐 Links
 🔗 [Live Demo](https://blymanor.github.io/miniproject_cs319/#home) 
+
+---
+
+## 👩‍💻 Developers
+
+Ingnapa Khunra
+Tipparida Rujisunkuntorn
