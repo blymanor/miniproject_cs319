@@ -54,5 +54,5 @@ One modal component used for multiple purposes — job details, course registrat
 
 ## 👩‍💻 Developers
 
-Ingnapa Khunra
-Tipparida Rujisunkuntorn
+-Ingnapa Khunra
+-Tipparida Rujisunkuntorn
